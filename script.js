@@ -85,12 +85,12 @@ for(let i = 0; i < allNineBoxes.length; ++i){
 
         let exSVG = document.createElement("img");
         exSVG.setAttribute("id", "Equis");
-        exSVG.style.cssText = "height:130px;width:130px;"
+        exSVG.classList.add("cuizz");
         exSVG.src = "Photos/ex.svg";
 
         let circleSVG = document.createElement("img");
         circleSVG.setAttribute("id", "Circulo");
-        circleSVG.style.cssText = "height:130px;width:130px;"
+        circleSVG.classList.add("cuizz");
         circleSVG.src = "Photos/cr.svg";
 
         if(holder1 == 0 && fillAllBoxes < 10){
