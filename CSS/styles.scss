@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+:root{
+    --main-font: 'Merriweather Sans', sans-serif;
+}
+
+body{
+    background-color: #182a33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#main-box{
+    font-family: var(--main-font);
+    height: 700px;
+    width: 450px;
+    background-color: #182a33;
+}
+
+.heading{
+    color: #a7bdc6;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 2em;
+    justify-content: space-between;
+
+    .logo{
+        width: 120px;
+        height: 100%;
+        padding: 10px 0;
+        background: #182a33;
+        .x, .cr{
+            width:30px;
+            height:30px;
+        }
+    }
+    .turn-btn{   
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 120px;
+        height: 100%;
+        background: rgb(0, 255, 21);
+        border-radius: .5em;
+        background-color: #1f3540;
+        box-shadow: .5px 6px 2px -1px #132027;
+        .x2{
+            width:20px;
+            height:20px;
+            margin-right: 1em;
+        }
+    }
+    .restart-btn{
+        width: 120px;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        
+        .res-box{
+            width: 50px;
+            height: 50px;
+            background-color: #a9bfc8;
+            border-radius: .5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 100ms linear;
+            .res{
+                margin-top: -.1em;
+                width:40;
+                height:40px;
+            }
+        }
+        .res-box:hover{
+            box-shadow: 0px 0px 5px 2px white;
+            border: 1px solid white;
+            cursor: pointer;
+        }   
+    }
+}
+
+#main-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.box{
+    height: 130px;
+    width: 130px;
+    background-color: #1f3540;
+    border-radius: .5em;
+    box-shadow: .5px 6px 2px -1px #132027;
+}
+
+.footer{
+    display: flex;
+    width: 100%;
+    height: 65px;
+    margin-top: 1.3em;
+    flex: 1;
+    gap: 1em;
+    margin-bottom: 1em;
+    .z{
+        flex: 1;
+        border-radius: .5em;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .player-score{
+        background-color: #31c5bf;
+        line-height: 1.5em;
+    }
+    .game-score{
+        background-color: #a8bfc8;
+        line-height: 1.5em;
+    }
+    .cpu-score{
+        background-color: #f2b235;
+        line-height: 1.5em;
+    }
+}
+svg{
+    margin-bottom: -4.5px;
+    margin-left: .5em;
+}
+footer{
+    height: 30px;
+    text-align: center;
+    display: flex;
+    color: rgba(255, 255, 255, 0.493);
+}
+
+@media all and (max-width: 465px) {
+    .box{
+        width: 100px;
+        height: 100px;
+    }
+    #main-grid{
+        gap: 15px;
+    }
+}
+
+@media all and (max-width: 365px) {
+    .box{
+        width: 80px;
+        height: 80px;
+    }
+    #main-grid{
+        gap: 10px;
+    }
+    #main-box{
+        width: 300px;
+    }
+}

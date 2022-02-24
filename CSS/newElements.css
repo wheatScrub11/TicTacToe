@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+:root{
+    --main-fontt: 'Merriweather Sans', sans-serif;
+}
+
+.user-input{
+    font-family: var(--main-fontt);
+    font-size: 2rem;
+    width: 300px;
+    height: 250px;
+    background-color: #a8bfc8;
+    border: 3px solid #596d77;
+    padding: 1em;
+    text-align: center;
+    position: absolute;
+    margin: 0em 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ex-or-circle{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 60px;
+    margin-top: .5em;
+    margin-bottom: 1em;
+}
+.userEx, .userCircle{
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    box-shadow: .5px 6px 3px -5px white;
+    transition: all 100ms linear;
+}
+.userEx:hover, .userCircle:hover{
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}
+
+.b{
+    font-size: 1.5rem;
+    width:200px;
+    margin-top: .5em;
+    height:50px;
+    border: none;
+    box-shadow: .5px 6px 3px -3px #132027;
+    transition: all 100ms linear;
+}
+.b:hover{
+    transform: scale(1.1, 1.1);
+    background-color: rgb(241, 242, 255);
+    cursor: pointer;
+}
+.me{
+    background-color: #c531b1;
+}
+.cpu{
+    background-color: #3159c5;
+    margin-bottom: 1em;
+}
+.ok-btn{
+    border: none;
+    background-color: #f3b336;
+    padding: 10px 0 0 0;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 100ms linear;
+}
+.ok-btn:hover{
+    background-color:#f5cb76;
+    border: 1px solid #c7a560;
+}
+
+
+@media all and (max-width: 365px) {
+    .user-input{
+        width: 200px;
+        height: 300px;
+    }
+}
